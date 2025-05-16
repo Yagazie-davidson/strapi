@@ -98,7 +98,7 @@ export default function Home() {
 									</h5>
 								</div>
 								<p className="text-[17px] font-medium text-left md:max-w-64 mt-3 text-[#666687]">
-									You're unable to customize or extend the CMS to fit your
+									You&apos;re unable to customize or extend the CMS to fit your
 									unique project needs.
 								</p>
 							</div>
@@ -138,8 +138,8 @@ export default function Home() {
 									</h5>
 								</div>
 								<p className="text-[17px] font-medium text-left md:max-w-64 mt-3 text-[#666687]">
-									You're dealing with a CMS that lacks a large, active community
-									of developers.
+									You&apos;re dealing with a CMS that lacks a large, active
+									community of developers.
 								</p>
 							</div>
 						</div>
