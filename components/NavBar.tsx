@@ -70,7 +70,7 @@ export function NavBar() {
 	return (
 		<nav
 			className={cn(
-				"fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-[112px] py-3 transition-colors duration-300",
+				"fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-[20px] md:px-[112px] py-3 transition-colors duration-300",
 				{
 					"bg-white shadow-md": isScrolled,
 					"bg-transparent": !isScrolled,
@@ -235,14 +235,14 @@ export function NavBar() {
 					/>
 				</div>
 				<button
-					className={cn("py-[14px] px-[20px] rounded-[8px] font-medium", {
+					className={cn("py-[10px] px-[20px] rounded-[8px] font-medium", {
 						"text-[#292875] bg-white border border-[#292875]": !isScrolled,
 						" text-[#292875]": isScrolled,
 					})}
 				>
 					Contact Sales
 				</button>
-				<button className="bg-[#4945ff] text-white py-[14px] px-[20px] rounded-[8px] font-medium">
+				<button className="bg-[#4945ff] text-white py-[10px] px-[20px] rounded-[8px] font-medium">
 					Get Started
 				</button>
 			</div>

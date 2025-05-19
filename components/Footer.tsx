@@ -70,7 +70,7 @@ const Footer = () => {
 	];
 	return (
 		<div>
-			<div className="flex flex-col md:flex-row space-y-10 md:space-y-0 items-start justify-start md:space-x-56 px-[112px]">
+			<div className="flex flex-col md:flex-row space-y-10 md:space-y-0 items-start justify-start md:space-x-56 px-20 md:px-[112px]">
 				<div className={"font-bold text-3xl text-black"}>LOGO</div>
 				<div className="flex items-start flex-wrap space-x-20 space-y-7 md:space-y-0">
 					{groupLinks.map((group, index) => (
