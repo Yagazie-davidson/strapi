@@ -70,7 +70,7 @@ export function NavBar() {
 	return (
 		<nav
 			className={cn(
-				"fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-[20px] md:px-[112px] py-3 transition-colors duration-300",
+				"fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-[28px] md:px-[112px] py-6 md:py-3 transition-colors duration-300",
 				{
 					"bg-white shadow-md": isScrolled,
 					"bg-transparent": !isScrolled,
@@ -222,7 +222,7 @@ export function NavBar() {
 				</NavigationMenu>
 			</div>
 			<div className="flex items-center md:hidden">
-				<div className="bg-white shadow-md p-1 rounded-sm">
+				<div className="bg-white shadow-md p-2 rounded-sm">
 					<Menu color={"#000"} strokeWidth={2} size={24} />
 				</div>
 			</div>
