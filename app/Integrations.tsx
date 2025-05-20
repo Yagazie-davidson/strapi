@@ -51,7 +51,7 @@ const integrationsData = [
 
 const Integrations = () => {
 	return (
-		<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4 sm:px-8 md:px-16 lg:px-[112px] gap-5">
+		<div className="grid grid-cols-1 min-[986px]:grid-cols-2 lg:grid-cols-3 px-4 sm:px-8 min-[986px]:px-16 lg:px-[112px] gap-5">
 			{integrationsData.map((item, index) => (
 				<motion.div
 					initial={{ scale: 1 }}

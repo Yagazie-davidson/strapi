@@ -71,14 +71,14 @@ export function NavBar() {
 	return (
 		<nav
 			className={cn(
-				"fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-[28px] md:px-[112px] py-6 md:py-3 transition-colors duration-300",
+				"fixed top-0 left-0 right-0 z-50 flex items-center min-[986px]:justify-center justify-between space-x-10 px-[28px] min-[986px]:px-[112px] py-6 min-[986px]:py-3 transition-colors duration-300",
 				{
 					"bg-white shadow-md": isScrolled,
 					"bg-transparent": !isScrolled,
 				}
 			)}
 		>
-			<div className="flex items-center space-x-4">
+			<div className="flex items-center space-x-4  ">
 				<div
 					className={cn("font-bold text-2xl", {
 						"text-black": isScrolled,
@@ -88,7 +88,7 @@ export function NavBar() {
 					LOGO
 				</div>
 				<NavigationMenu className="hidden min-[986px]:block">
-					<NavigationMenuList>
+					<NavigationMenuList className="  -space-x-5 min-[1304px]:space-x-0 flex justify-center">
 						<NavigationMenuItem>
 							<NavigationMenuTrigger
 								className={cn({
@@ -98,7 +98,7 @@ export function NavBar() {
 								Product
 							</NavigationMenuTrigger>
 							<NavigationMenuContent>
-								<ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+								<ul className="grid gap-3 p-6 min-[986px]:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
 									<li className="row-span-3">
 										<NavigationMenuLink asChild>
 											<Link
@@ -140,7 +140,7 @@ export function NavBar() {
 								Solutions
 							</NavigationMenuTrigger>
 							<NavigationMenuContent>
-								<ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+								<ul className="grid w-[400px] gap-3 p-4 min-[986px]:w-[500px] min-[986px]:grid-cols-2 lg:w-[600px] ">
 									{components.map(component => (
 										<ListItem
 											key={component.title}
@@ -162,7 +162,7 @@ export function NavBar() {
 								Developers
 							</NavigationMenuTrigger>
 							<NavigationMenuContent>
-								<ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+								<ul className="grid w-[400px] gap-3 p-4 min-[986px]:w-[500px] min-[986px]:grid-cols-2 lg:w-[600px] ">
 									{components.map(component => (
 										<ListItem
 											key={component.title}
@@ -206,7 +206,7 @@ export function NavBar() {
 								Cloud
 							</NavigationMenuTrigger>
 							<NavigationMenuContent>
-								<ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+								<ul className="grid w-[400px] gap-3 p-4 min-[986px]:w-[500px] min-[986px]:grid-cols-2 lg:w-[600px] ">
 									{components.map(component => (
 										<ListItem
 											key={component.title}
@@ -222,13 +222,13 @@ export function NavBar() {
 					</NavigationMenuList>
 				</NavigationMenu>
 			</div>
-			<div className="flex items-center min-[986px]:hidden">
+			<div className="flex items-center min-[986px]:hidden ">
 				{/* <div className="bg-white shadow-md p-2 rounded-sm">
 					<Menu color={"#000"} strokeWidth={2} size={24} />
 				</div> */}
 				<MobileMenu />
 			</div>
-			<div className="min-[986px]:flex items-center space-x-4 hidden">
+			<div className="min-[986px]:flex items-center justify-end space-x-4 hidden  ">
 				<div>
 					<Search
 						color={isScrolled ? "#000" : "#FFF"}
@@ -237,14 +237,17 @@ export function NavBar() {
 					/>
 				</div>
 				<button
-					className={cn("py-[10px] px-[20px] rounded-[8px] font-medium", {
-						"text-[#292875] bg-white border border-[#292875]": !isScrolled,
-						" text-[#292875]": isScrolled,
-					})}
+					className={cn(
+						"py-[10px] px-2.5 min-[1304px]:px-[20px] rounded-[8px] font-medium",
+						{
+							"text-[#292875] bg-white border border-[#292875]": !isScrolled,
+							" text-[#292875]": isScrolled,
+						}
+					)}
 				>
 					Contact Sales
 				</button>
-				<button className="bg-[#4945ff] text-white py-[10px] px-[20px] rounded-[8px] font-medium">
+				<button className="bg-[#4945ff] text-white py-[10px] px-2.5 min-[1304px]:px-[20px] rounded-[8px] font-medium">
 					Get Started
 				</button>
 			</div>

@@ -6,26 +6,26 @@ import Integrations from "./Integrations";
 export default function Home() {
 	return (
 		<div>
-			<div className="bg-[#181826] bg-[url('/strapi5_hero.svg')] bg-no-repeat bg-cover bg-center md:px-[112px] py-3 flex overflow-y-auto justify-center items-center pt-32">
-				<div className="md:px-28 px-10">
+			<div className="bg-[#181826] bg-[url('/strapi5_hero.svg')] bg-no-repeat bg-contain bg-top w-full px-0 py-3 flex justify-center items-start pt-32">
+				<div className="min-[986px]:px-28 px-10">
 					<div className="flex items-center justify-center mb-10">
 						<div className="bg-[#212134] mx-3 w-fit flex items-center space-x-6  py-1.5 px-3 justify-center rounded-[8px] border-[0.5px] border-[#32324d]">
-							<div className="bg-[#9739de] text-white font-bold text-[12px] md:text-[14px] px-1 rounded-[4px]">
+							<div className="bg-[#9739de] text-white font-bold text-[12px] min-[986px]:text-[14px] px-1 rounded-[4px]">
 								Soon
 							</div>
-							<div className="text-white text-[12px] md:text-[14px] font-bold">
+							<div className="text-white text-[12px] min-[986px]:text-[14px] font-bold">
 								StrapiConf Keynote kicks off on May 13, 10AM CEST.
 							</div>
-							<div className="text-[#9739de] cursor-pointer flex items-center  text-[12px] md:text-[14px] space-x-1">
+							<div className="text-[#9739de] cursor-pointer flex items-center  text-[12px] min-[986px]:text-[14px] space-x-1">
 								<p>Watch here</p>
 								<MoveRight size={15} />
 							</div>
 						</div>
 					</div>
-					<h2 className="text-white text-[33px] md:text-[53px] font-bold text-center ">
+					<h2 className="text-white text-[33px] min-[986px]:text-[53px] font-bold text-center ">
 						Build modern websites with the most customizable Headless CMS
 					</h2>
-					<p className="text-white text-[16px] md:text-[17px] font-normal text-center mt-10">
+					<p className="text-white text-[16px] min-[986px]:text-[17px] font-normal text-center mt-10">
 						The open-source Headless CMS for developers that makes API creation
 						easy, and supports your favorite frameworks. Customize and host your
 						projects in the cloud or on your own servers.
@@ -45,7 +45,7 @@ export default function Home() {
 								Start your Demo
 							</button>
 						</div>
-						<div className="text-white grid grid-cols-1 gap-y-10 md:flex md:justify-center md:space-x-14 mt-10">
+						<div className="text-white grid grid-cols-1 gap-y-10 min-[986px]:flex min-[986px]:justify-center min-[986px]:space-x-14 mt-10">
 							<div className="flex items-center space-x-3">
 								<span>
 									<Check color="#9739de" size={16} />
@@ -68,22 +68,22 @@ export default function Home() {
 					</div>
 				</div>
 			</div>
-			<div className="bg-[#181826] h-screen flex justify-center items-end py-20">
+			<div className="bg-[#181826] h-[40vh] flex justify-center items-end py-20">
 				<Companies />
 			</div>
-			<div className="bg-white h-screen flex justify-center items-center md:px-[112px] ">
+			<div className="bg-white h-screen flex justify-center items-center min-[986px]:px-[112px] ">
 				<div className="">
 					<h5 className="text-[#9739de] font-bold text-[14px] uppercase text-center">
 						the problem
 					</h5>
-					<h3 className="text-[24px] md:text-[53px] font-bold text-center text-[#292875] md:px-[100px] px-10">
+					<h3 className="text-[24px] min-[986px]:text-[53px] font-bold text-center text-[#292875] min-[986px]:px-[100px] px-10">
 						Building your website the way you want is hard
 					</h3>
-					<p className="text-[17px] md:text-[17px] font-medium text-center mt-5 text-[#666687] px-10 md:px-0">
+					<p className="text-[17px] min-[986px]:text-[17px] font-medium text-center mt-5 text-[#666687] px-10 min-[986px]:px-0">
 						because your CMS is slowing you down and holding you back.
 					</p>
-					<div className="mt-10 grid grid-cols-1 gap-y-12 md:grid-cols-3 md:gap-x-6 lg:gap-x-10 w-full px-4 md:px-0">
-						<div className="flex items-center md:space-x-10 space-x-5">
+					<div className="mt-10 grid grid-cols-1 gap-y-12 min-[986px]:grid-cols-3 min-[986px]:gap-x-6 lg:gap-x-10 w-full px-4 min-[986px]:px-0">
+						<div className="flex items-center min-[986px]:space-x-10 space-x-5">
 							<div className="border-l-2 h-28">{/* border */}</div>
 							<div>
 								<div className="flex items-center space-x-3">
@@ -97,13 +97,13 @@ export default function Home() {
 										Lack of customization
 									</h5>
 								</div>
-								<p className="text-[14px] md:text-[17px] font-medium text-left md:max-w-64 mt-3 text-[#666687]">
+								<p className="text-[14px] min-[986px]:text-[17px] font-medium text-left min-[986px]:max-w-64 mt-3 text-[#666687]">
 									You&apos;re unable to customize or extend the CMS to fit your
 									unique project needs.
 								</p>
 							</div>
 						</div>
-						<div className="flex items-center md:space-x-10 space-x-5">
+						<div className="flex items-center min-[986px]:space-x-10 space-x-5">
 							<div className="border-l-2 h-28">{/* border */}</div>
 							<div>
 								<div className="flex items-center space-x-3">
@@ -117,13 +117,13 @@ export default function Home() {
 										Lack of plugins
 									</h5>
 								</div>
-								<p className="text-[14px] md:text-[17px] font-medium text-left md:max-w-64 mt-3 text-[#666687]">
+								<p className="text-[14px] min-[986px]:text-[17px] font-medium text-left min-[986px]:max-w-64 mt-3 text-[#666687]">
 									You are not able to use your favorite tools, and lack plugins
 									or integrations.
 								</p>
 							</div>
 						</div>
-						<div className="flex items-center md:space-x-10 space-x-5">
+						<div className="flex items-center min-[986px]:space-x-10 space-x-5">
 							<div className="border-l-2 h-28">{/* border */}</div>
 							<div>
 								<div className="flex items-center space-x-3">
@@ -137,7 +137,7 @@ export default function Home() {
 										Lack of community
 									</h5>
 								</div>
-								<p className="text-[14px] md:text-[17px] font-medium text-left md:max-w-64 mt-3 text-[#666687]">
+								<p className="text-[14px] min-[986px]:text-[17px] font-medium text-left min-[986px]:max-w-64 mt-3 text-[#666687]">
 									You&apos;re dealing with a CMS that lacks a large, active
 									community of developers.
 								</p>
@@ -147,15 +147,15 @@ export default function Home() {
 				</div>
 			</div>
 
-			<div className="bg-white flex justify-center items-center md:px-[112px]">
+			<div className="bg-white flex justify-center items-center min-[986px]:px-[112px]">
 				<div className="">
 					<h5 className="text-[#9739de] font-bold text-[14px] uppercase text-center">
 						integrations
 					</h5>
-					<h3 className="text-[24px] md:text-[53px] font-bold text-center text-[#292875] md:px-[100px] px-10">
+					<h3 className="text-[24px] min-[986px]:text-[53px] font-bold text-center text-[#292875] min-[986px]:px-[100px] px-10">
 						All your favorite dev tools work with Strapi.
 					</h3>
-					<p className="text-[17px] md:text-[17px] font-medium text-center mt-5 text-[#666687] px-10 md:px-0">
+					<p className="text-[17px] min-[986px]:text-[17px] font-medium text-center mt-5 text-[#666687] px-10 min-[986px]:px-0">
 						Connect your favorite databases, frontend frameworks, or static site
 						generators. Choose where you want to host your websites. Integrate
 						with your favorite tools, and work with the best of each world. No

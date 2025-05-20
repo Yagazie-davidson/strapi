@@ -14,7 +14,7 @@ const Companies = () => {
 		"/Accenture.svg",
 	];
 	return (
-		<div className="grid grid-cols-2 gap-20 md:gap-0 md:flex md:justify-center md:items-center md:space-x-10">
+		<div className="grid grid-cols-2 gap-20 min-[986px]:gap-0 min-[986px]:flex min-[986px]:justify-center min-[986px]:items-center min-[986px]:space-x-10">
 			{logos.map((logoSrc, index) => (
 				<Image
 					key={index}
