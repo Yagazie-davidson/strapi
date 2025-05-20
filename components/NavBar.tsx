@@ -14,6 +14,7 @@ import {
 	navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { Menu, Search } from "lucide-react";
+import MobileMenu from "./MobileMenu";
 
 const components: { title: string; href: string; description: string }[] = [
 	{
@@ -86,7 +87,7 @@ export function NavBar() {
 				>
 					LOGO
 				</div>
-				<NavigationMenu className="hidden md:block">
+				<NavigationMenu className="hidden min-[986px]:block">
 					<NavigationMenuList>
 						<NavigationMenuItem>
 							<NavigationMenuTrigger
@@ -221,12 +222,13 @@ export function NavBar() {
 					</NavigationMenuList>
 				</NavigationMenu>
 			</div>
-			<div className="flex items-center md:hidden">
-				<div className="bg-white shadow-md p-2 rounded-sm">
+			<div className="flex items-center min-[986px]:hidden">
+				{/* <div className="bg-white shadow-md p-2 rounded-sm">
 					<Menu color={"#000"} strokeWidth={2} size={24} />
-				</div>
+				</div> */}
+				<MobileMenu />
 			</div>
-			<div className="md:flex items-center space-x-4 hidden">
+			<div className="min-[986px]:flex items-center space-x-4 hidden">
 				<div>
 					<Search
 						color={isScrolled ? "#000" : "#FFF"}

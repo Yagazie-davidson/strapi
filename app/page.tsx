@@ -6,7 +6,7 @@ import Integrations from "./Integrations";
 export default function Home() {
 	return (
 		<div>
-			<div className="bg-[#181826] bg-[url('/strapi5_hero.svg')] bg-no-repeat bg-cover bg-center md:px-[112px] py-3 flex overflow-y-auto justify-center items-center pt-32 md:pt-0">
+			<div className="bg-[#181826] bg-[url('/strapi5_hero.svg')] bg-no-repeat bg-cover bg-center md:px-[112px] py-3 flex overflow-y-auto justify-center items-center pt-32">
 				<div className="md:px-28 px-10">
 					<div className="flex items-center justify-center mb-10">
 						<div className="bg-[#212134] mx-3 w-fit flex items-center space-x-6  py-1.5 px-3 justify-center rounded-[8px] border-[0.5px] border-[#32324d]">
