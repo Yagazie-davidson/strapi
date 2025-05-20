@@ -13,7 +13,7 @@ import {
 	NavigationMenuTrigger,
 	navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import { Menu, Search } from "lucide-react";
+import { Search } from "lucide-react";
 import MobileMenu from "./MobileMenu";
 
 const components: { title: string; href: string; description: string }[] = [
